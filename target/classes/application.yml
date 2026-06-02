@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: docdroid
+  datasource:
+    url: jdbc:sqlite:docdroid.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+  shell:
+    interactive:
+      enabled: true
+    history:
+      enabled: true
+
+docdroid:
+  indexed-drives: []
+  index-database-location: docdroid.db
+  auto-load-index: true
+  search-result-limit: 100
+  index-batch-size: 1000
